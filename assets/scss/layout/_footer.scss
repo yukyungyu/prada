@@ -1,0 +1,207 @@
+.footer {
+	background-color: $swatch-black;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+
+	.inner {
+		height: 100%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.top-box {
+		display: grid;
+		grid-template-columns: .25fr 1fr;
+		gap: 10rem;
+	}
+
+	.footer-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5rem;
+	}
+
+	.footer-item {
+		display: flex;
+		gap: 1rem;
+		color: #fff;
+		
+    .num {
+			color: #fff;
+			font-size: 1rem;
+		}
+		
+    .footer-word {
+			color: var(--swatch--white);
+			font-size: 1.5rem;
+			line-height: 1.2;
+			text-transform: capitalize;
+		}
+		
+    > div {
+			display: flex;
+			flex-direction: column;
+			margin-top: -0.25rem;
+			gap: 0.75rem;
+		}
+	}
+	
+  .links-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+	
+  .links-item {
+		font-size: .8rem;
+		font-weight: 200;
+		line-height: 1.2;
+		text-transform: capitalize;
+		color: $swatch-white;
+	}
+	
+  .item-inner {
+		font-size: .8rem;
+		font-weight: 200;
+		line-height: 1.2;
+		text-transform: capitalize;
+		color: $swatch-white;
+	}
+	
+	.right-side {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		.footer-logo {
+			width: 100%;
+			// max-width: 47.75vw;
+		}
+	}
+	
+	.bottom-box {
+		color: $swatch-white;
+		letter-spacing: .02rem;
+		font-size: .75rem;
+		font-weight: 200;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		
+    .left-side {
+			display: flex;
+			gap: 7.5rem;
+		}
+		.right-side {
+			display: flex;
+			justify-content: space-between;
+			
+			.language {
+				display: flex;
+				align-items: center;
+				gap: 4px;
+
+				.flag {
+					display: inline-block;
+					width: 24px;
+					height: 24px;
+					background-image: url(../images/south-korea.svg);
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-size: cover;
+				}
+			}
+		}
+	}
+	
+  .copyright, .rights {
+		text-transform: uppercase;
+	}
+}
+
+.btn-top {
+	color: $swatch-white;
+}
+
+.menu-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	
+  .left-side {
+		background-color: $swatch-white;
+	}
+	.gnb-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+	.gnb-item {
+		height: 20%;
+		padding-left: 5%;
+		padding-right: 5%;
+		display: flex;
+		align-items: center;
+		position: relative;
+		border-bottom: 1px solid $swatch-black;
+		
+    > a {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+    .menu-wrap {
+			display: flex;
+			justify-content: flex-start;
+			gap: 3rem;
+		}
+		
+    .menu-num {
+			color: $swatch-black;
+			font-size: 1.5rem;
+		}
+		
+    .menu-name {
+			color: $swatch-black;
+			letter-spacing: -.21rem;
+			font-size: 5rem;
+			line-height: 1.25;
+		}
+		
+    .circle-arrow {
+			display: block;
+			width: 3rem;
+			height: 3rem;
+			border: 1px solid $swatch-black;
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+    &:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #eaeaea;
+		}
+	}
+	
+  .right-side {
+		background-color: $swatch-black;
+	}
+}

@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'Mrdehaviland';
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    src: url('../font/Mrdehaviland-Regular.woff2') format('woff2'),
+     url('../font/Mrdehaviland-Regular.woff') format('woff2');
+}
+
+@font-face {
+    font-family: Overusedgrotesk;
+    src: url(../font/OverusedGrotesk-Light.otf) format('woff2');
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: Overusedgrotesk;
+    src: url(../font/OverusedGrotesk-Medium.otf) format('woff2');
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Overusedgrotesk;
+    src: url(../font/OverusedGrotesk-SemiBold.otf) format('woff2');
+    font-style: normal;
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: Overusedgrotesk;
+    src: url(../font/OverusedGrotesk-Roman.otf) format('woff2');
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: Overusedgrotesk;
+    src: url(../font/OverusedGrotesk-Book.otf) format('woff2');font-style: normal;
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: 'Overusedgrotesk';
+    src: url(../font/OverusedGrotesk-Italic.otf) format('woff2');
+    font-weight: 400;
+    font-style: italic;
+  }

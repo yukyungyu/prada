@@ -1,0 +1,80 @@
+.header {
+	z-index: 998;
+	overflow: hidden;
+  
+	&-inner {
+		height: 100%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.logo {
+		display: block;
+		width: 125px;
+		width: 7.8125rem;
+		height: auto;
+	}
+	.menulist {
+		display: flex;
+		gap: 10px;
+		
+		.menuitem {
+			font-weight: 700;
+			gap: 0.5rem;
+			padding-bottom: 1px;
+			display: flex;
+	
+			.menu-num {
+				color: $swatch-black;
+				margin-top: .109375rem;
+				font-size: .6rem;
+			}
+		}
+	}
+}
+.btn-menu {
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: auto;
+
+	&-wrap {
+		width: 2.25rem;
+		height: 1rem;
+		gap: .3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 0;
+		padding-bottom: 0;
+		overflow: hidden;
+	}
+
+	&-line {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 2px;
+		gap: 5px;
+	}
+
+  .menu-dot {
+    width: .1875rem;
+    height: .1875rem;
+    background-color: $swatch-black;
+    border-radius: 100%;
+  }
+  .menu-line {
+    width: 100%;
+    height: .0781875rem;
+    background-color: $swatch-black;
+  }
+}
