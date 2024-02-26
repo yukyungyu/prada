@@ -23,23 +23,20 @@ history.scrollRestoration = "manual";
 
   const loadAni = gsap.timeline();
 
-  $('.load-logo').each(function(i, el){
-    loadAni.to($(el), {
-      delay:1,
-      yPercent: $(el).data('y'),
-      stagger: 0.1,
-    }, 'a')
+  loadAni.to($('.group-logo'), {
+    delay: 1,
+    autoAlpha: 0,
   })
   $('.load-box').each(function(i, el){
     loadAni.to($(this), 1, {
       yPercent: $(this).data('y'),
-    }, 'b')
+    }, 'a')
   })
-  loadAni.from($('.company-nm span'), 1, {
+  loadAni.from($('.prada-nm svg'), 1, {
     autoAlpha: 0, 
     yPercent: 100, 
     stagger: 0.3,
-  })
+  },'b')
   gsap.set($('.rwhite-box'), {
     scaleX: 1,
   })
@@ -48,11 +45,11 @@ history.scrollRestoration = "manual";
     transformOrigin: "0% 0%",
     delay: 0.3,
     ease: Cubic.easeOut,
-  })
+  },'b+=0.1')
   loadAni.from($('.header-line'), 1, {
     width: '0%',
     ease: Cubic.easeOut,
-  })
+  },'b+=0.1')
   loadAni.from($('.header-inner'), 1, {
     autoAlpha: 0, 
     yPercent: 100, 
@@ -63,11 +60,6 @@ history.scrollRestoration = "manual";
   gsap.set($('[data-motion="float"]').find('img'), {
     yPercent:-7,
     scale:1.1,
-    // transform: 'translate3d(0px, -8%, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-    // scaleX: 1.1,
-    // scaleY: 1.1,
-    // scaleZ: 1,
-    // yPercent: -8,
   });
 
 
@@ -84,15 +76,12 @@ history.scrollRestoration = "manual";
         },
       },
     })
-    // picAni.to($(el).find('img'), {yPercent: 8,})
     picAni.to($(el).find('img'), {
       yPercent:7,
       ease:'none'
-      // transform: 'translate3d(0px, 8%, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
     })
   });
 
-  // end에 영향 안받는 방법? 빠르게 등장하는 방법??
   $('[data-motion="opacity"]').each(function(i, el){
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -101,9 +90,6 @@ history.scrollRestoration = "manual";
         end: "100% 100%",
         // markers: true,
         scrub: 2,
-        onEnter: function(){
-          // console.log(el);
-        },
       },
     })
     tl.from($(el), 1.8, {
@@ -138,9 +124,6 @@ history.scrollRestoration = "manual";
         end: "100% 85%",
         // markers: true,
         scrub: 1,
-        onEnter: function(){
-          // console.log(el);
-        },
       },
       autoAlpha: 0, 
       yPercent: 100, 

@@ -25,9 +25,8 @@
     
     position: absolute;
     color: $swatch-white;
-    font-size: 5rem;
-    font-weight: 600;
-    line-height: .9;
+		width: 250px;
+		height: auto;
     overflow: hidden;
 	}
 
@@ -39,7 +38,7 @@
 	}
 
 	.load-box {
-		background-color: #222;
+		background-color: #191919;
 	}
 }
 

@@ -37,19 +37,18 @@
 		}
 	}
 
-	.company-nm {
+	.prada-nm {
 		font-weight: 200;
 		font-size: 13vw;
 		letter-spacing: -0.3rem;
 		margin-bottom: 0.75rem;
 		display: flex;
+		overflow: hidden;
 	}
 
-	.company-photo {
+	.black-photo {
 		width: 100%;
 		position: relative;
-		.img-box {
-		}
 	}
 
 	.quote-box {

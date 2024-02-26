@@ -185,9 +185,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   position: absolute;
   color: #f8fafc;
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: 0.9;
+  width: 250px;
+  height: auto;
   overflow: hidden;
 }
 .load-page .group-box {
@@ -197,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(4, 1fr);
 }
 .load-page .load-box {
-  background-color: #222;
+  background-color: #191919;
 }
 
 .skip-nav {
@@ -545,7 +544,6 @@ h2.title {
 .header .logo {
   display: block;
   width: 125px;
-  width: 7.8125rem;
   height: auto;
 }
 .header .menulist {
@@ -905,7 +903,7 @@ h2.title {
   border-radius: 50%;
   background-color: #0c0c0c;
 }
-.sc-prada .company-nm {
+.sc-prada .prada-nm {
   font-weight: 200;
   font-size: 13vw;
   letter-spacing: -0.3rem;
@@ -913,8 +911,9 @@ h2.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
-.sc-prada .company-photo {
+.sc-prada .black-photo {
   width: 100%;
   position: relative;
 }
