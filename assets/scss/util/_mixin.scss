@@ -1,8 +1,14 @@
 
+$desktop:1559px; 
 $pc:1399px;
 $tablet:1023px;
 $mobile:767px;
 
+@mixin desktop(){
+    @media (max-width:$desktop) {
+        @content;
+    }
+}
 @mixin pc(){
     @media (max-width:$pc) {
         @content;

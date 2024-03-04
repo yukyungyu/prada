@@ -141,13 +141,14 @@ history.scrollRestoration = "manual";
         start: "0% 75%",
         end: "100% 100%",
         // markers: true,
-        scrub: 1,
+        // scrub: 1,
+        // toggleActions: "play none restart none",
         onEnter: function(){
           // console.log($(el));
           $(el).addClass('on');
         },
         onLeaveBack: function(){
-          $(el).removeClass('on');
+          // $(el).removeClass('on');
         }
       },
       scaleY: 0, 
