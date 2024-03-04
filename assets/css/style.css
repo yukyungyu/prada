@@ -1167,7 +1167,6 @@ h2.title {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
-  border: 1px solid #000;
 }
 .sc-wommen .right-side {
   display: -webkit-box;
