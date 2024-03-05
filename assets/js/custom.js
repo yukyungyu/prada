@@ -17,7 +17,7 @@ history.scrollRestoration = "manual";
       $('body').removeClass('hidden')
       $('.load-page').addClass('hide');
       lenis.start();
-    }, 3000);
+    }, 4000);
   });
 
   const loadAni = gsap.timeline();
