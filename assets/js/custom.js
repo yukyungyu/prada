@@ -13,12 +13,11 @@ history.scrollRestoration = "manual";
 
   $(window).on('load', function(){
     // 로딩 끝나면
-  setTimeout(() => {
-    // $('body').removeClass('hidden')
-    lenis.start()
-    $('.load-page').addClass('hide');
-    lenis.start();
-  }, 3000);
+    setTimeout(() => {
+      $('body').removeClass('hidden')
+      $('.load-page').addClass('hide');
+      lenis.start();
+    }, 3000);
   });
 
   const loadAni = gsap.timeline();
@@ -141,7 +140,7 @@ history.scrollRestoration = "manual";
         start: "0% 75%",
         end: "100% 100%",
         // markers: true,
-        // scrub: 1,
+        scrub: 1,
         // toggleActions: "play none restart none",
         onEnter: function(){
           // console.log($(el));
