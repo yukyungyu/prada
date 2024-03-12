@@ -68,11 +68,7 @@ history.scrollRestoration = "manual";
         trigger: $(el),
         start: "0% 100%",
         end: "100% 0%",
-        // markers: true,
         scrub: 1,
-        onEnter: function(){
-          // console.log(el);
-        },
       },
     })
     picAni.to($(el).find('img'), {
@@ -87,7 +83,6 @@ history.scrollRestoration = "manual";
         trigger: $(el),
         start: "0% 100%",
         end: "100% 100%",
-        // markers: true,
         scrub: 2,
       },
     })
@@ -121,7 +116,6 @@ history.scrollRestoration = "manual";
         trigger: $(el),
         start: "0% 90%",
         end: "100% 85%",
-        // markers: true,
         scrub: 1,
       },
       autoAlpha: 0, 
@@ -139,16 +133,11 @@ history.scrollRestoration = "manual";
         trigger: $(el),
         start: "0% 75%",
         end: "100% 100%",
-        // markers: true,
         scrub: 1,
         // toggleActions: "play none restart none",
         onEnter: function(){
-          // console.log($(el));
           $(el).addClass('on');
         },
-        onLeaveBack: function(){
-          // $(el).removeClass('on');
-        }
       },
       scaleY: 0, 
       transformOrigin: "100% 100%",
